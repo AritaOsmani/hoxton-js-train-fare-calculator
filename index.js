@@ -38,7 +38,7 @@ function trainFareCalculator(age, distance){
         ticketPrice = ticketPrice - (0.4 * ticketPrice);
         
     }
-    return ticketPrice;
+    return ticketPrice.toFixed(2);
 }
 
 // Returns the distance between the departure station and destination
@@ -69,7 +69,7 @@ function calculateDistance(start, end){
     return distance;
 }
    
-         traveler_age = prompt("How old are you?");
+         traveler_age = Number(prompt("How old are you?"));
          
          if(isNaN(traveler_age)){
              alert("Wrong age input!");
